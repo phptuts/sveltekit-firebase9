@@ -2,8 +2,9 @@
 	import { getBooks } from '../db';
 
 	export async function load() {
-		const books = await getBooks();
 		try {
+			const books = await getBooks();
+
 			return {
 				props: {
 					books
